@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Cuac</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cek Cuaca</h2>
+        <label>Latitude: <input type="text" id="lat" placeholder="-6.2088"></label><br>
+        <label>Longitude: <input type="text" id="lon" placeholder="106.8456"></label><br>
+        <button onclick="Cek()">Cek Cuaca</button>
+
+        <div class="result">
+            <h3>Cuaca di <span id="city">...</span></h3>
+            <p>Suhu: <span id="temperature">...</span>°C</p>
+            <p>Kelembaban: <span id="humidity">...</span>%</p>
+            <p>Cuaca: <span id="weather">...</span></p>
+            <img id="weather-icon" src="" alt=".">
+        </div>
+    </div>
+</body>
+</html>
