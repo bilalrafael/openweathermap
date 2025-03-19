@@ -2,7 +2,7 @@ const API_KEY = "openweathermap";
 
 function Cek() {
     const lat = document.getElementById("lat").value;
-    const lon = document.getElementById("lon").value;
+    const lon = document.getElementById("long").value;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=id`;
 
     fetch(url)
